@@ -34,26 +34,27 @@ app.get('/getchat', async (req,res) => {
     });
 
     let max = 0;
+    let inx = 0;
     
     // Finds the maximum no.of matches
     for(let i=0;i<n;i++)
     {
-        console
-        if(count[i] <= count[i+1])
+        console.log(count[i]);
+        if(max <= count[i])
         {
-            max = i+1;
-            console.log(max);
+            max = count[i];
+            inx = i;
         }
             
     }
-    //console.log(max);
     // Assigns the response to the ans variable
     data.intent.forEach((value,index) => {
-        //if(max == index)
-            
+        if(inx == index)
+            ans = value.response[0];            
     });  
-    // Sends the response to the webpage
     
+    // Sends the response to the webpage
+    console.log(ans);
     res.send(ans);
 });
 
