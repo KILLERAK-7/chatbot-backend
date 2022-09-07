@@ -22,29 +22,31 @@ app.get('/getchat', async (req,res) => {
         n += 1;
     });
     let count = Array(n);
-    let i=0;
-    
     //counts the no.of matchs per index
-    q.toString().split(" ").forEach(element => {
-        count[i] = 0;
-        data.intent.forEach((value,index) => {
+    data.intent.forEach((value,index) => {
+        count[index] = 0;
+        q.toString().split(" ").forEach(element => {
             value.pattern.forEach(key => {
                 if(element.toLowerCase() == key.toLowerCase())
-                    count[i] += 1;
+                    count[index] += 1;        
             });
-            i++;
         });
     });
 
-    let max = count[0];
+    let max = 0;
     
     // Finds the maximum no.of matches
     for(let i=0;i<n;i++)
     {
+        console
         if(count[i] <= count[i+1])
+        {
             max = i+1;
+            console.log(max);
+        }
+            
     }
-    console.log(max);
+    //console.log(max);
     // Assigns the response to the ans variable
     data.intent.forEach((value,index) => {
         //if(max == index)
