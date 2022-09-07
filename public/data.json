@@ -1,6 +1,17 @@
 {"intent":[
     {
         "tag": "greeting",
+        "pattern": " ",
+        "response": ["Sorry, I couldn't understand your query. Could you rephrase that?"]
+    },
+    {
+        "tag":"greeting",
+        "pattern": ["Hi","Hello","Hey"],
+        "response": ["Hello there, How can i help you"],
+        "context_set": ""
+    },
+    {
+        "tag": "greeting",
         "pattern": ["mess", "time", "schedule","timing","breakfast","lunch","dinner"],
         "response": ["Morning– 7:30AM to 9AM\nAfternoon– 12PM to 2PM\nEvening– 4PM to 6PM\nNight- 8PM to 10PM"],
         "context_set": ""
@@ -27,6 +38,12 @@
         "tag":"greeting",
         "pattern": ["hostel","time","timing","intime","curfew","rules","outing"],
         "response": ["The students should follow the Study timings : 8.00 PM to 10.00 PM\nThe students should follow the Mess timings \n\to Breakfast :  07.00 am. – 7.30 am. \n\to Lunch :: 11.15 am  – 11.45 am. (for 1st and 4th Yrs). 12.00 PM– 12.30 PM (for 2nd  and 3rd  Yrs).   \n\to Snacks : 03.00 PM. – 03.15 PM.      \n\to Dinner : 07.00 PM. – 07.30 PM  for girls and 07.30 PM  –  0.8.30 PM for boys"],
+        "context_set": ""
+    },
+    {
+        "tag": "endOfConvo",
+        "pattern": ["bye","thank you","see you"],
+        "response":["Bye:Thank you for using our service. Hope you got what you were looking for. See you later."],
         "context_set": ""
     }
 ]}
