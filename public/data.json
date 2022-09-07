@@ -1,0 +1,32 @@
+{"intent":[
+    {
+        "tag": "greeting",
+        "pattern": ["mess", "time", "schedule","timing","breakfast","lunch","dinner"],
+        "response": ["Morning– 7:30AM to 9AM\nAfternoon– 12PM to 2PM\nEvening– 4PM to 6PM\nNight- 8PM to 10PM"],
+        "context_set": ""
+    },
+    {
+        "tag": "",
+        "pattern": ["fees", "cost", "tuition","fee","payment"],
+        "response": ["I hope you will Find out what your are looking for here. \nhttps://www.upes.ac.in/fee-structure"],
+        "context_set": ""
+    },
+    {
+        "tag": "greeting",
+        "pattern": ["mess", "veg", "non-veg","food","difference"],
+        "response": ["The mess hall covers a total area of 70,000 Sq. Ft with separate Vegetarian and Non-Vegetarian kitchens that come up with mouth-watering meals three times a day, all seven days of the week. The tantalising aroma drifting from the kitchens is guaranteed to replace any other coherent thought one might possess with the idea of fine dining. Healthy eating has never looked more appetizing. All food is cooked by extremely talented chefs with a passion for preparing mouth-watering dishes. The students have the option of choosing amongVegetarian, Non-Vegetarian and Diet food prepared in separate sections."],
+        "context_set": ""
+    },
+    {
+        "tag": "greeting",
+        "pattern": ["hostel","rooms","dorm","dormateory"],
+        "response":["The Institution is housing 5 hostels for Boys and 5 hostels for Girls in a gargantuan area of 16,75,000 Square feet.Both have AC and Non-AC rooms. “SAFETY” is the prime objective in the campus and the institution is known as “SAFE HEAVEN” especially for girl students. All the academic and daily needs of the students are in the campus and within reach for each student, making hostel life pleasant and comfortable. HOSTEL CAMPUS is known as “HOME AWAY FROM HOME”."],
+        "context_set": ""
+    },
+    {
+        "tag":"greeting",
+        "pattern": ["hostel","time","timing","intime","curfew","rules","outing"],
+        "response": ["The students should follow the Study timings : 8.00 PM to 10.00 PM\nThe students should follow the Mess timings \n\to Breakfast :  07.00 am. – 7.30 am. \n\to Lunch :: 11.15 am  – 11.45 am. (for 1st and 4th Yrs). 12.00 PM– 12.30 PM (for 2nd  and 3rd  Yrs).   \n\to Snacks : 03.00 PM. – 03.15 PM.      \n\to Dinner : 07.00 PM. – 07.30 PM  for girls and 07.30 PM  –  0.8.30 PM for boys"],
+        "context_set": ""
+    }
+]}
