@@ -87,7 +87,7 @@ app.post('/getfeedback',async (req,res,next) => {
     res.status(200)
     next();
 })
-.get("/getfeedback",async (req,res) => {
+.get("/getfeedback",async (req,res) => {    
     res.send("OK 200");
 });
 
